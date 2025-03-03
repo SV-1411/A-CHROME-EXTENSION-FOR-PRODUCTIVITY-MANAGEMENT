@@ -1,0 +1,137 @@
+/* popup.css - Soft pastel theme with professional look */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 20px;
+    width: 320px;
+    color: #444;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h1 {
+    color: #4a90e2;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h2, h3 {
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .focus-btn {
+    background-color: #fdd835;
+    color: #333;
+  }
+  
+  .focus-btn:hover {
+    background-color: #fbc02d;
+  }
+  
+  .update-btn {
+    background-color: #81c784;
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #66bb6a;
+  }
+
+  .update-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+  .start-btn {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .start-btn:hover {
+    background-color: #357ab7;
+  }
+  
+  .stop-btn {
+    background-color: #e57373;
+    color: white;
+  }
+  
+  .stop-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  #timeSpent {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Centering the entire section */
+.sites-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically if needed */
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  /* Centering the placeholder text */
+  #siteList {
+    width: 100%;
+    padding: 10px;
+    text-align: center; /* This centers the placeholder text */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  

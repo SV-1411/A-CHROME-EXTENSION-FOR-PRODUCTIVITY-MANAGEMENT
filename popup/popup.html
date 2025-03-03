@@ -1,0 +1,113 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      color: #333;
+    }
+    h2, h3 {
+      margin: 10px 0;
+      color: #444;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    input {
+      width: calc(100% - 24px);
+      padding: 6px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #timeSpent {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 5px 0;
+    }
+    .section {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+    #startTimer {
+      background-color: #28a745;
+    }
+    #startTimer:hover {
+      background-color: #218838;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h2>Productivity Tracker</h2>
+
+  <div class="section">
+    <h3>Focus Mode: <span id="status">OFF</span></h3>
+    <button id="toggleFocus">Toggle Focus Mode</button>
+  </div>
+
+  <div class="section">
+    <h3>Tracked Sites</h3>
+    <input id="siteList" type="text" placeholder="Enter sites, comma separated">
+    <button id="updateSites">Update Sites</button>
+  </div>
+
+  <div class="section">
+    <h3>Time Spent</h3>
+    <div id="timeSpent">00:00:00</div>
+    <button id="toggleTimer">Start Timer</button>
+  </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-chart-line"></i> Productivity Tracker</h1>
+
+    <div class="focus-section">
+      <h2><i class="fas fa-bullseye"></i> Focus Mode: <span id="status">OFF</span></h2>
+      <button id="toggleFocus" class="focus-btn">Toggle Focus Mode</button>
+    </div>
+
+    <div class="sites-section">
+      <h2><i class="fas fa-globe"></i> Tracked Sites</h2>
+      <input id="siteList" type="text" placeholder="Enter sites, comma separated">
+      <button id="updateSites" class="update-btn">Update Sites</button>
+    </div>
+
+    <div class="timer-section">
+      <h2><i class="fas fa-clock"></i> Time Spent</h2>
+      <div id="timeSpent">00:00:00</div>
+      <button id="toggleTimer" class="start-btn">Start Timer</button>
+    </div>
+  </div>
+</body>
+</html>
